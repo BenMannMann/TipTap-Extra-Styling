@@ -34,12 +34,7 @@ export default {
         this.editor = new Editor({
             extensions: [
                 StarterKit,
-                BackgroundColour.configure({
-                    types: [
-                        'heading',
-                        'paragraph',
-                    ],
-                }),
+                BackgroundColour,
             ],
             content: `
                 <h2>Heading</h2>
