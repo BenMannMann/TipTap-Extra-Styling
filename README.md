@@ -1,6 +1,9 @@
 # TipTap Background Colours
 Adds Background Colour Functionality to TipTap Editor.
 
+
+![colour](https://user-images.githubusercontent.com/14131644/163864828-d0c374e7-f5cb-4fd3-853c-a63eabf42adf.png)
+
 ___
 
 Current Features:
