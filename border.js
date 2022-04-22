@@ -9,11 +9,11 @@ export const Border = Extension.create({
             widths: ['1px', '2px', '3px', '4px', '5px', '6px'],
             styles: ['solid', 'dashed', 'dotted'],
             colours: ['blue', 'red', 'yellow', 'green', 'orange', 'pink', 'purple', 'brown', 'grey', 'black', 'white'],
-            radiuses: ['5px', '10px', '15px', '20px', '25px'],
-            defaultBorderWidth: 'solid',
-            defaultBorderStyle: '1px',
-            defaultBorderColour: 'black',
-            defaultBorderRadius: '5px',
+            radiuses: ['0px', '5px', '10px', '15px', '20px', '25px'],
+            defaultBorderWidth: '1px',
+            defaultBorderStyle: 'solid',
+            defaultBorderColour: 'white',
+            defaultBorderRadius: '0px',
         }
     },
 
