@@ -7,7 +7,7 @@ export const BackgroundColour = Extension.create({
         return {
             types: ['heading', 'paragraph'],
             colours: ['blue', 'red', 'yellow', 'green', 'orange', 'pink', 'purple', 'brown', 'grey', 'black', 'white'],
-            defaultColour: 'grey',
+            defaultColour: 'white',
         }
     },
 
