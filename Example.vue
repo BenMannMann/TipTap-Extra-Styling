@@ -1,5 +1,5 @@
 <template>
-    <div v-if="editor">
+    <div v-if="editor" class="mb-5">
         <button @click="editor.chain().focus().setBackgroundColour('blue').run()" :class="{ 'is-active': editor.isActive({ backgroundColour: 'blue' }) }" class="tiptap-button">
             Blue Background
         </button>
@@ -42,6 +42,21 @@
         <button @click="editor.chain().focus().unsetBorder().run()" class="tiptap-button">
             Unset Border
         </button>
+        <button @click="editor.chain().focus().setPaddingRight('10px').run()" :class="{ 'is-active': editor.isActive({ paddingRight: '10px' }) }" class="tiptap-button">
+            10px Padding Right
+        </button>
+        <button @click="editor.chain().focus().setPaddingLeft('10px').run()" :class="{ 'is-active': editor.isActive({ paddingLeft: '10px' }) }" class="tiptap-button">
+            10px Padding Left
+        </button>
+        <button @click="editor.chain().focus().setPaddingTop('10px').run()" :class="{ 'is-active': editor.isActive({ paddingTop: '10px' }) }" class="tiptap-button">
+            10px Padding Top
+        </button>
+        <button @click="editor.chain().focus().setPaddingBottom('10px').run()" :class="{ 'is-active': editor.isActive({ paddingBottom: '10px' }) }" class="tiptap-button">
+            10px Padding Bottom
+        </button>
+        <button @click="editor.chain().focus().unsetPadding().run()" class="tiptap-button">
+            Unset Padding
+        </button>
     </div>
   <editor-content :editor="editor" />
 </template>
@@ -51,6 +66,7 @@ import { Editor, EditorContent } from '@tiptap/vue-3'
 import StarterKit from '@tiptap/starter-kit'
 import { BackgroundColour } from "../../../TipTapExtensions/background-colour.js"
 import { Border } from "../../../TipTapExtensions/border.js"
+import { Padding } from "../../../TipTapExtensions/padding.js"
 
 export default {
     components: {
@@ -67,11 +83,13 @@ export default {
                 StarterKit,
                 BackgroundColour,
                 Border,
+                Padding,
             ],
             content: `
                 <h2>Heading</h2>
-                <p>first paragraph</p>
-                <p>second paragraph</p>
+                <p>First Paragraph</p>
+                <p>Second Paragraph</p>
+                <h3>Second Heading</h3>
             `,
         })
     },
@@ -93,6 +111,6 @@ export default {
     border: 1px solid black;
     border-radius: 5px;
     padding: 5px;
-    margin-right: 5px;
+    margin: 0px 5px 10px 0px;
 }
 </style>
