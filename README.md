@@ -1,6 +1,12 @@
-# TipTap Background Colours
-Adds Background Colour Functionality to TipTap Editor.
+# TipTap Extra Styling
+A set of different extensions to add extra styling to the TipTap Editor
+___
 
+
+
+
+## TipTap Background Colour
+Adds Background Colour Functionality to TipTap Editor.
 
 ![colour](https://user-images.githubusercontent.com/14131644/163864828-d0c374e7-f5cb-4fd3-853c-a63eabf42adf.png)
 
@@ -13,6 +19,3 @@ TO-DO:
 - Allow passing of Hex Values
 - Allow passing of RGB Values
 - Apply to more tags than just paragraph and headings
-- Create a DIV to apply the background colouring to, so we can:
-  - Pass through more styling options E.G. Borders, Padding, Margin ETC...
-  - ^ Create a new extension called Text Styling to encompass all of this... 
