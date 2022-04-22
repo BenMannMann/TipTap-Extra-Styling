@@ -4,6 +4,7 @@ Added so far:
 - Background Colour
 - Border
   - Border Colour, Width, Style & Radius
+- Padding
 ___
 
 ## TipTap Background Colour
