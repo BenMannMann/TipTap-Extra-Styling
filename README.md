@@ -1,5 +1,9 @@
 # TipTap Extra Styling
-A set of different extensions to add extra styling to the TipTap Editor
+A set of different extensions to add extra styling to the TipTap Editor.
+Added so far:
+- Background Colour
+- Border
+-- Border Colour, Width, Style & Radius
 ___
 
 
