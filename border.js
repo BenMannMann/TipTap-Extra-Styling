@@ -10,7 +10,7 @@ export const Border = Extension.create({
             styles: ['solid', 'dashed', 'dotted'],
             colours: ['blue', 'red', 'yellow', 'green', 'orange', 'pink', 'purple', 'brown', 'grey', 'black', 'white'],
             radiuses: ['0px', '5px', '10px', '15px', '20px', '25px'],
-            defaultBorderWidth: '1px',
+            defaultBorderWidth: '0px',
             defaultBorderStyle: 'solid',
             defaultBorderColour: 'white',
             defaultBorderRadius: '0px',
@@ -106,7 +106,7 @@ export const Border = Extension.create({
             },
 
             unsetBorder: () => ({ commands }) => {
-                return this.options.types.every(type => commands.resetAttributes(type, 'borderWidth', 'borderStyle', 'BorderColour', 'borderRadius'))
+                return this.options.types.every(type => commands.resetAttributes(type, ['borderWidth', 'borderStyle', 'BorderColour', 'borderRadius']))
             },
         }
     },
