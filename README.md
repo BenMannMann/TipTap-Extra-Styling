@@ -3,11 +3,8 @@ A set of different extensions to add extra styling to the TipTap Editor.
 Added so far:
 - Background Colour
 - Border
--   Border Colour, Width, Style & Radius
+  - Border Colour, Width, Style & Radius
 ___
-
-
-
 
 ## TipTap Background Colour
 Adds Background Colour Functionality to TipTap Editor.
@@ -20,6 +17,23 @@ Current Features:
 - Click button to colour paragraph. Simple as.
 
 TO-DO:
+- Allow passing of Hex Values
+- Allow passing of RGB Values
+- Apply to more tags than just paragraph and headings
+
+
+## TipTap Border
+Adds Border Functionality to TipTap Editor.
+
+![border](https://user-images.githubusercontent.com/14131644/164736927-3592f441-3ade-4c44-a7bb-2794a33a42bb.png)
+
+___
+
+Current Features:
+- Allows buttons to edit width, style, colour and radius of a border 
+
+TO-DO:
+- Have buttons to apply styles all at once
 - Allow passing of Hex Values
 - Allow passing of RGB Values
 - Apply to more tags than just paragraph and headings
