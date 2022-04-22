@@ -6,7 +6,7 @@ export const BackgroundColour = Extension.create({
     addOptions() {
         return {
             types: ['heading', 'paragraph'],
-            colours: ['blue', 'red', 'green', 'yellow', 'orange', 'pink', 'purple', 'brown', 'grey', 'black', 'white'],
+            colours: ['blue', 'red', 'yellow', 'green', 'orange', 'pink', 'purple', 'brown', 'grey', 'black', 'white'],
             defaultColour: 'grey',
         }
     },
@@ -20,11 +20,6 @@ export const BackgroundColour = Extension.create({
                         default: this.options.defaultColour,
                         parseHTML: element => element.style.backgroundColour || this.options.defaultColour,
                         renderHTML: attributes => {
-                            if (attributes.backgroundColour === this.options.defaultColour) {
-                                return {}
-                            }
-
-
                             return { style: `background-color: ${attributes.backgroundColour}` }
                         },
                     }
