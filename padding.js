@@ -11,6 +11,7 @@ export const Padding = Extension.create({
             defaultPaddingLeft: '0px',
             defaultPaddingTop: '0px',
             defaultPaddingBottom: '0px',
+            defaultPadding: '0px',
         }
     },
 
@@ -47,6 +48,13 @@ export const Padding = Extension.create({
                             return { style: `padding-bottom: ${attributes.paddingBottom}` }
                         },
                     },
+                    padding: {
+                        default: this.options.defaultPadding,
+                        parseHTML: element => element.style.padding || this.options.defaultPadding,
+                        renderHTML: attributes => {
+                            return { style: `padding: ${attributes.padding}` }
+                        },
+                    }
                 }
             }
         ]
@@ -86,8 +94,16 @@ export const Padding = Extension.create({
                 return this.options.types.every(type => commands.updateAttributes(type, { paddingBottom: spacing }))
             },
 
+            setPadding: (spacing) => ({ commands }) => {
+                if (!this.options.spacings.includes(spacing)) {
+                    return false
+                }
+
+                return this.options.types.every(type => commands.updateAttributes(type, { padding: spacing }))
+            },
+
             unsetPadding: () => ({ commands }) => {
-                return this.options.types.every(type => commands.resetAttributes(type, ['paddingRight', 'paddingLeft', 'paddingTop', 'paddingBottom']))
+                return this.options.types.every(type => commands.resetAttributes(type, ['paddingRight', 'paddingLeft', 'paddingTop', 'paddingBottom', 'padding']))
             },
         }
     },
