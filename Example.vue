@@ -60,6 +60,24 @@
         <button @click="editor.chain().focus().unsetPadding().run()" class="tiptap-button">
             Unset Padding
         </button>
+        <button @click="editor.chain().focus().setPaddingRight('10px').run()" :class="{ 'is-active': editor.isActive({ marginRight: '10px' }) }" class="tiptap-button">
+            10px Margin Right
+        </button>
+        <button @click="editor.chain().focus().setMarginLeft('10px').run()" :class="{ 'is-active': editor.isActive({ marginLeft: '10px' }) }" class="tiptap-button">
+            10px Margin Left
+        </button>
+        <button @click="editor.chain().focus().setMarginTop('10px').run()" :class="{ 'is-active': editor.isActive({ marginTop: '10px' }) }" class="tiptap-button">
+            10px Margin Top
+        </button>
+        <button @click="editor.chain().focus().setMarginBottom('10px').run()" :class="{ 'is-active': editor.isActive({ marginBottom: '10px' }) }" class="tiptap-button">
+            10px Margin Bottom
+        </button>
+        <button @click="editor.chain().focus().setMargin('10px').run()" :class="{ 'is-active': editor.isActive({ margin: '10px' }) }" class="tiptap-button">
+            10px Margin
+        </button>
+        <button @click="editor.chain().focus().unsetMargin().run()" class="tiptap-button">
+            Unset Margin
+        </button>
     </div>
   <editor-content :editor="editor" />
 </template>
@@ -70,6 +88,7 @@ import StarterKit from '@tiptap/starter-kit'
 import { BackgroundColour } from "../../../TipTapExtensions/background-colour.js"
 import { Border } from "../../../TipTapExtensions/border.js"
 import { Padding } from "../../../TipTapExtensions/padding.js"
+import { Margin } from "../../../TipTapExtensions/margin.js"
 
 export default {
     components: {
@@ -87,6 +106,7 @@ export default {
                 BackgroundColour,
                 Border,
                 Padding,
+                Margin,
             ],
             content: `
                 <h2>Heading</h2>
