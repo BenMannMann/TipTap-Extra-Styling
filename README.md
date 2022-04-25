@@ -41,13 +41,13 @@ TO-DO:
 ## TipTap Padding
 Adds Padding Functionality to TipTap Editor.
 
-![padding](https://user-images.githubusercontent.com/14131644/164762255-930972d5-6e88-4053-b5f2-1e3ff8d77000.png)
+![padding](https://user-images.githubusercontent.com/14131644/165165784-0554054a-c139-4ccb-b30d-da728f3fa994.png)
 
 ___
 
 Current Features:
 - Allows buttons to add padding to headings and paragraphs
+- Allows buttons to add specific directional padding to headings and paragraphs
 
 TO-DO:
-- Have buttons to apply all padding directions all at once
 - Apply to more tags than just paragraph and headings
