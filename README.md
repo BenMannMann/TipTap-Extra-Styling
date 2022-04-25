@@ -5,14 +5,13 @@ Added so far:
 - Border
   - Border Colour, Width, Style & Radius
 - Padding
+
+![padding](https://user-images.githubusercontent.com/14131644/165165784-0554054a-c139-4ccb-b30d-da728f3fa994.png)
+
 ___
 
 ## TipTap Background Colour
 Adds Background Colour Functionality to TipTap Editor.
-
-![colour](https://user-images.githubusercontent.com/14131644/163864828-d0c374e7-f5cb-4fd3-853c-a63eabf42adf.png)
-
-___
 
 Current Features:
 - Click button to colour paragraph. Simple as.
@@ -25,10 +24,6 @@ TO-DO:
 ## TipTap Border
 Adds Border Functionality to TipTap Editor.
 
-![border](https://user-images.githubusercontent.com/14131644/164736927-3592f441-3ade-4c44-a7bb-2794a33a42bb.png)
-
-___
-
 Current Features:
 - Allows buttons to edit width, style, colour and radius of a border 
 
@@ -40,10 +35,6 @@ TO-DO:
 
 ## TipTap Padding
 Adds Padding Functionality to TipTap Editor.
-
-![padding](https://user-images.githubusercontent.com/14131644/165165784-0554054a-c139-4ccb-b30d-da728f3fa994.png)
-
-___
 
 Current Features:
 - Allows buttons to add padding to headings and paragraphs
