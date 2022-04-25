@@ -54,6 +54,9 @@
         <button @click="editor.chain().focus().setPaddingBottom('10px').run()" :class="{ 'is-active': editor.isActive({ paddingBottom: '10px' }) }" class="tiptap-button">
             10px Padding Bottom
         </button>
+        <button @click="editor.chain().focus().setPadding('10px').run()" :class="{ 'is-active': editor.isActive({ padding: '10px' }) }" class="tiptap-button">
+            10px Padding
+        </button>
         <button @click="editor.chain().focus().unsetPadding().run()" class="tiptap-button">
             Unset Padding
         </button>
