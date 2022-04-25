@@ -11,7 +11,6 @@ export const Padding = Extension.create({
             defaultPaddingLeft: '0px',
             defaultPaddingTop: '0px',
             defaultPaddingBottom: '0px',
-            defaultPadding: '0px',
         }
     },
 
@@ -49,8 +48,7 @@ export const Padding = Extension.create({
                         },
                     },
                     padding: {
-                        default: this.options.defaultPadding,
-                        parseHTML: element => element.style.padding || this.options.defaultPadding,
+                        parseHTML: element => element.style.padding,
                         renderHTML: attributes => {
                             return { style: `padding: ${attributes.padding}` }
                         },
