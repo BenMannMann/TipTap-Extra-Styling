@@ -23,6 +23,10 @@ export const Margin = Extension.create({
                         default: this.options.defaultMarginRight,
                         parseHTML: element => element.style.marginRight || this.options.defaultMarginRight,
                         renderHTML: attributes => {
+                            if (!attributes.marginRight) {
+                              return {}
+                            }
+                            
                             return { style: `margin-right: ${attributes.marginRight}` }
                         },
                     },
@@ -30,6 +34,10 @@ export const Margin = Extension.create({
                         default: this.options.defaultMarginLeft,
                         parseHTML: element => element.style.marginLeft || this.options.defaultMarginLeft,
                         renderHTML: attributes => {
+                            if (!attributes.marginLeft) {
+                              return {}
+                            }
+
                             return { style: `margin-left: ${attributes.marginLeft}` }
                         },
                     },
@@ -37,6 +45,10 @@ export const Margin = Extension.create({
                         default: this.options.defaultMarginTop,
                         parseHTML: element => element.style.marginTop || this.options.defaultMarginTop,
                         renderHTML: attributes => {
+                            if (!attributes.marginTop) {
+                              return {}
+                            }
+
                             return { style: `margin-top: ${attributes.marginTop}` }
                         },
                     },
@@ -44,12 +56,20 @@ export const Margin = Extension.create({
                         default: this.options.defaultMarginBottom,
                         parseHTML: element => element.style.marginBottom || this.options.defaultMarginBottom,
                         renderHTML: attributes => {
+                            if (!attributes.marginBottom) {
+                              return {}
+                            }
+
                             return { style: `margin-bottom: ${attributes.marginBottom}` }
                         },
                     },
                     margin: {
                         parseHTML: element => element.style.margin,
                         renderHTML: attributes => {
+                            if (!attributes.margin) {
+                              return {}
+                            }
+
                             return { style: `margin: ${attributes.margin}` }
                         },
                     }
