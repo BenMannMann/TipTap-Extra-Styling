@@ -38,7 +38,7 @@ export const Border = Extension.create({
                     },
                     borderColour: {
                         default: this.options.defaultBorderColour,
-                        parseHTML: element => element.style.borderColour || this.options.defaultBorderColour,
+                        parseHTML: element => element.style.borderColor || this.options.defaultBorderColour,
                         renderHTML: attributes => {
                             return { style: `border-color: ${attributes.borderColour}` }
                         },
