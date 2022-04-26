@@ -20,6 +20,10 @@ export const BackgroundColour = Extension.create({
                         default: this.options.defaultColour,
                         parseHTML: element => element.style.backgroundColor || this.options.defaultColour,
                         renderHTML: attributes => {
+                            if (!attributes.backgroundColour) {
+                              return {}
+                            }
+
                             return { style: `background-color: ${attributes.backgroundColour}` }
                         },
                     }
