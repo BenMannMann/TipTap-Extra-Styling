@@ -23,6 +23,10 @@ export const Padding = Extension.create({
                         default: this.options.defaultPaddingRight,
                         parseHTML: element => element.style.paddingRight || this.options.defaultPaddingRight,
                         renderHTML: attributes => {
+                            if (!attributes.paddingRight) {
+                              return {}
+                            }
+
                             return { style: `padding-right: ${attributes.paddingRight}` }
                         },
                     },
@@ -30,6 +34,10 @@ export const Padding = Extension.create({
                         default: this.options.defaultPaddingLeft,
                         parseHTML: element => element.style.paddingLeft || this.options.defaultPaddingLeft,
                         renderHTML: attributes => {
+                            if (!attributes.paddingLeft) {
+                              return {}
+                            }
+
                             return { style: `padding-left: ${attributes.paddingLeft}` }
                         },
                     },
@@ -37,6 +45,10 @@ export const Padding = Extension.create({
                         default: this.options.defaultPaddingTop,
                         parseHTML: element => element.style.paddingTop || this.options.defaultPaddingTop,
                         renderHTML: attributes => {
+                            if (!attributes.paddingTop) {
+                              return {}
+                            }
+
                             return { style: `padding-top: ${attributes.paddingTop}` }
                         },
                     },
@@ -44,12 +56,20 @@ export const Padding = Extension.create({
                         default: this.options.defaultPaddingBottom,
                         parseHTML: element => element.style.paddingBottom || this.options.defaultPaddingBottom,
                         renderHTML: attributes => {
+                            if (!attributes.paddingBottom) {
+                              return {}
+                            }
+
                             return { style: `padding-bottom: ${attributes.paddingBottom}` }
                         },
                     },
                     padding: {
                         parseHTML: element => element.style.padding,
                         renderHTML: attributes => {
+                            if (!attributes.padding) {
+                              return {}
+                            }
+
                             return { style: `padding: ${attributes.padding}` }
                         },
                     }
