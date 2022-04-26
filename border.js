@@ -13,7 +13,7 @@ export const Border = Extension.create({
             defaultBorderWidth: '0px',
             defaultBorderStyle: 'solid',
             defaultBorderColour: 'white',
-            defaultBorderRadius: '0px',
+            defaultBorderRadius: '0px', 
         }
     },
 
@@ -26,6 +26,10 @@ export const Border = Extension.create({
                         default: this.options.defaultBorderWidth,
                         parseHTML: element => element.style.borderWidth || this.options.defaultBorderWidth,
                         renderHTML: attributes => {
+                            if (!attributes.borderWidth) {
+                              return {}
+                            }
+
                             return { style: `border-width: ${attributes.borderWidth}` }
                         },
                     },
@@ -33,6 +37,10 @@ export const Border = Extension.create({
                         default: this.options.defaultBorderStyle,
                         parseHTML: element => element.style.borderStyle || this.options.defaultBorderStyle,
                         renderHTML: attributes => {
+                            if (!attributes.borderStyle) {
+                              return {}
+                            }
+
                             return { style: `border-style: ${attributes.borderStyle}` }
                         },
                     },
@@ -40,6 +48,10 @@ export const Border = Extension.create({
                         default: this.options.defaultBorderColour,
                         parseHTML: element => element.style.borderColor || this.options.defaultBorderColour,
                         renderHTML: attributes => {
+                            if (!attributes.borderColour) {
+                              return {}
+                            }
+
                             return { style: `border-color: ${attributes.borderColour}` }
                         },
                     },
@@ -47,6 +59,10 @@ export const Border = Extension.create({
                         default: this.options.defaultBorderRadius,
                         parseHTML: element => element.style.borderRadius || this.options.defaultBorderRadius,
                         renderHTML: attributes => {
+                            if (!attributes.borderRadius) {
+                              return {}
+                            }
+
                             return { style: `border-radius: ${attributes.borderRadius}` }
                         },
                     },
