@@ -7,6 +7,7 @@ Added so far:
 - Padding
 - Margin
 - Width
+- Float
 
 ![tiptap](https://user-images.githubusercontent.com/14131644/165166923-ff498eb2-3f92-42eb-8435-df5ad87deba7.png)
 
@@ -63,3 +64,13 @@ Current Features:
 
 TO-DO:
 - Apply to more tags than just paragraph and headings
+- 
+## TipTap Float
+Adds Float Functionality to TipTap Editor.
+
+Current Features:
+- Allows buttons to add float left or float right to headings and paragraphs
+
+TO-DO:
+- Apply to more tags than just paragraph and headings
+- Attach clear both below the tag
