@@ -6,6 +6,7 @@ Added so far:
   - Border Colour, Width, Style & Radius
 - Padding
 - Margin
+- Width
 
 ![tiptap](https://user-images.githubusercontent.com/14131644/165166923-ff498eb2-3f92-42eb-8435-df5ad87deba7.png)
 
@@ -50,6 +51,15 @@ Adds Margin Functionality to TipTap Editor.
 Current Features:
 - Allows buttons to add margin to headings and paragraphs
 - Allows buttons to add specific directional margin to headings and paragraphs
+
+TO-DO:
+- Apply to more tags than just paragraph and headings
+
+## TipTap Width
+Adds Width Functionality to TipTap Editor.
+
+Current Features:
+- Allows buttons to add width to headings and paragraphs
 
 TO-DO:
 - Apply to more tags than just paragraph and headings
